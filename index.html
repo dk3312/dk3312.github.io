@@ -152,6 +152,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-2019-10-21" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/22/2019-10-21/">2019-10-21</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/22/2019-10-21/" class="archive-article-date">
+  	<time datetime="2019-10-22T10:50:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/22/2019-10-21/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-2019-10-18-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -172,7 +234,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>1使用insert into任意添加三条数据(数据信息自定)加到这个表中<br>insert into PRODUCT (id, pcode, pname, inprice, outprice, toma, lastcou, ptype, mark, createtime)<br>values (19, ‘f-2164’, ‘CPU’, 2.7, 4, ‘三三’, 56, ‘b’, 1,’2010-09-14’);<br>2删除’猪肉’的那条记录<br>DELETE FROM product WHERE pname=’猪肉’;<br>3将扳手和钳子的商品名称分别改为’16号扳手’和’小号钳子’,并将这两个商品的管理人员都改为’赵六’<br>UPDATE product SET pname=’16号扳手’where pname=’扳手’;<br>UPDATE product SET toma=’赵六’where pname=’16号扳手’;</p>
+<p>UPDATE product SET pname=’小号钳子’where pname=’钳子’;<br>UPDATE product SET toma=’赵六’where pname=’小号钳子’;<br>4查询商品类型为’a’的所有商品<br>SELECT * FROM product WHERE ptype=’a’;<br>5查询王五负责的c类商品<br>SELECT * FROM product WHERE ptype=’c’ and toma=’王五’;<br>6查询剩余数量小于50的所有商品<br>SELECT * from product WHERE lastcou&lt;50;<br>7查询剩余数量在60-80之间的<br>SELECT * FROM product where lastcou BETWEEN  60 and 80;<br>8查询商品名称带’笔’的和带’鱼’的记录<br>SELECT * FROM product WHERE pname like ‘%笔’ or pname LIKE ‘%鱼’;<br>9查询商品编号中带’qq’的记录<br>SELECT * FROM product where pcode LIKE ‘%qq%’;<br>10查询商品类型为a, d, c的所有商品<br>SELECT * FROM product WHERE ptype in(‘a’,’b’,’c’);</p>
+
       
 
       
